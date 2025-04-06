@@ -25,7 +25,7 @@ pipeline {
 
         stage('Terraform init') {
             steps {
-                dir('Terraform') {
+                dir('terraform') {
                     sh '''
                     terraform init \
                     -backend-config="access_key=$AWS_ACCESS_KEY_ID" \
