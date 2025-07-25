@@ -35,9 +35,9 @@ pipeline {
 
   post {
     always {
-      mail to: 'ht736335@gmail.com',
-           subject: "Build ${currentBuild.currentResult}: ${env.JOB_NAME} #${env.BUILD_NUMBER}",
-           body: "Pipeline finished with status: ${currentBuild.currentResult}\nSee console log at ${env.BUILD_URL}"
+     // mail to: 'ht736335@gmail.com',
+       //    subject: "Build ${currentBuild.currentResult}: ${env.JOB_NAME} #${env.BUILD_NUMBER}",
+         //  body: "Pipeline finished with status: ${currentBuild.currentResult}\nSee console log at ${env.BUILD_URL}"
     }
   }
 }
